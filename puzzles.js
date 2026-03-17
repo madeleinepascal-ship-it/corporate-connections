@@ -124,9 +124,9 @@ const PUZZLES = [
         words: ["LEVERAGE", "SYNERGIZE", "IDEATE", "DEMOCRATIZE"],
       },
       {
-        category: "Phrases that should never come out of your mouth",
+        category: "Places you never want to be / things you never want to say",
         color: "blue",
-        words: ["SAME PAGE", "OUTSIDE THE BOX", "YOUR BACKPOCKET", "LOW-HANGING"],
+        words: ["ON THE SAME PAGE", "OUTSIDE THE BOX", "IN YOUR BACKPOCKET", "THE WEEDS"],
       },
       {
         category: "Ways to sound extremely put together when you're falling apart",
