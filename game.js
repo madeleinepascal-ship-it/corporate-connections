@@ -58,6 +58,7 @@ function loadPuzzle(index) {
   shuffleArray(tiles);
 
   // Reset UI
+  window.scrollTo(0, 0);
   solvedEl.innerHTML = "";
   endScreenEl.classList.remove("visible");
   midNudgeEl.classList.remove("visible");
