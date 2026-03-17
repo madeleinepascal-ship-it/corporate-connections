@@ -290,6 +290,179 @@ header p.subtitle {
   text-align: center;
 }
 
+.end-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-invite {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #1a1a1a;
+}
+
+.btn-invite:hover {
+  background: #333 !important;
+  border-color: #333 !important;
+  color: #fff !important;
+}
+
+/* ── Invite overlay ──────────────────────────────────────────────────────── */
+
+.invite-screen {
+  position: fixed;
+  inset: 0;
+  background: #0f0f0f;
+  color: #f5f0e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+
+.invite-screen.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.invite-inner {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  animation: fadeInUp 0.5s ease both;
+}
+
+.invite-back {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  transition: color 0.15s;
+  align-self: flex-start;
+}
+
+.invite-back:hover {
+  color: #f5f0e8;
+}
+
+.invite-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.invite-eyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #888;
+}
+
+.invite-headline {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #f5f0e8;
+}
+
+.invite-body {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #b0a898;
+  max-width: 420px;
+}
+
+/* Form */
+.invite-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.invite-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.invite-field label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #888;
+}
+
+.invite-field input,
+.invite-field textarea {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #f5f0e8;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.15s;
+  outline: none;
+}
+
+.invite-field input::placeholder,
+.invite-field textarea::placeholder {
+  color: #555;
+}
+
+.invite-field input:focus,
+.invite-field textarea:focus {
+  border-color: #888;
+}
+
+.invite-field input.error,
+.invite-field textarea.error {
+  border-color: #e05050;
+}
+
+.btn-send {
+  background: #f5f0e8;
+  color: #0f0f0f;
+  border: 2px solid #f5f0e8;
+  border-radius: 100px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  align-self: flex-start;
+}
+
+.btn-send:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+.invite-disclaimer {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: -8px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Animations */
 @keyframes popIn {
   from { transform: scale(0.9); opacity: 0; }

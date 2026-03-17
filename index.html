@@ -47,13 +47,61 @@
       <h2 id="end-title"></h2>
       <p id="end-message"></p>
       <div class="share-result" id="share-result"></div>
-      <button class="btn btn-primary" id="btn-copy">Copy Result</button>
+      <div class="end-actions">
+        <button class="btn" id="btn-copy">Copy Result</button>
+        <button class="btn btn-invite" id="btn-show-invite">Send to a friend →</button>
+      </div>
     </div>
 
   </div>
 
   <!-- Toast notification -->
   <div id="toast" class="toast"></div>
+
+  <!-- Invite overlay -->
+  <div id="invite-screen" class="invite-screen" aria-hidden="true">
+    <div class="invite-inner">
+
+      <button class="invite-back" id="btn-invite-back" aria-label="Back to results">← back</button>
+
+      <div class="invite-hero">
+        <p class="invite-eyebrow">you made it through the jargon.</p>
+        <h2 class="invite-headline">make more interesting connections.</h2>
+        <p class="invite-body">
+          Ask a friend to have a meeting that's totally not a meeting
+          and is actually a drink or a coffee or a walk or a makeout
+          or whatever you fancy.
+        </p>
+      </div>
+
+      <form class="invite-form" id="invite-form" novalidate>
+        <div class="invite-field">
+          <label for="friend-name">their name</label>
+          <input type="text" id="friend-name" name="friend-name"
+                 placeholder="e.g. Alex" autocomplete="off" />
+        </div>
+
+        <div class="invite-field">
+          <label for="friend-email">their email</label>
+          <input type="email" id="friend-email" name="friend-email"
+                 placeholder="colleague@somewhere.com" autocomplete="off" />
+        </div>
+
+        <div class="invite-field">
+          <label for="invite-note">your note</label>
+          <textarea id="invite-note" name="invite-note" rows="3">I'd rather connect with you</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-send" id="btn-send">
+          Send the invite ↗
+        </button>
+        <p class="invite-disclaimer">
+          Opens your email client — no data is sent anywhere.
+        </p>
+      </form>
+
+    </div>
+  </div>
 
   <script src="puzzles.js"></script>
   <script src="game.js"></script>

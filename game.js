@@ -33,6 +33,8 @@ const btnSubmit      = document.getElementById("btn-submit");
 const btnPrev        = document.getElementById("btn-prev");
 const btnNext        = document.getElementById("btn-next");
 const puzzleLabel    = document.getElementById("puzzle-label");
+const inviteScreenEl = document.getElementById("invite-screen");
+const inviteFormEl   = document.getElementById("invite-form");
 
 // ── Puzzle loading ───────────────────────────────────────────────────────────
 function loadPuzzle(index) {
@@ -287,6 +289,51 @@ function updatePuzzleNav() {
   btnNext.disabled = currentPuzzleIndex === PUZZLES.length - 1;
 }
 
+// ── Invite screen ─────────────────────────────────────────────────────────────
+function openInvite() {
+  inviteScreenEl.classList.add("open");
+  inviteScreenEl.removeAttribute("aria-hidden");
+  document.getElementById("friend-name").focus();
+}
+
+function closeInvite() {
+  inviteScreenEl.classList.remove("open");
+  inviteScreenEl.setAttribute("aria-hidden", "true");
+}
+
+function sendInvite(e) {
+  e.preventDefault();
+
+  const nameEl  = document.getElementById("friend-name");
+  const emailEl = document.getElementById("friend-email");
+  const noteEl  = document.getElementById("invite-note");
+
+  // Basic validation
+  let valid = true;
+  [nameEl, emailEl, noteEl].forEach(el => el.classList.remove("error"));
+
+  if (!emailEl.value.trim() || !emailEl.value.includes("@")) {
+    emailEl.classList.add("error");
+    emailEl.focus();
+    valid = false;
+  }
+  if (!valid) return;
+
+  const name  = nameEl.value.trim() || "hey";
+  const email = emailEl.value.trim();
+  const note  = noteEl.value.trim() || "I'd rather connect with you";
+  const gameUrl = window.location.href;
+
+  const subject = encodeURIComponent("I'd rather connect with you");
+  const body = encodeURIComponent(
+    `${name},\n\n${note}\n\n` +
+    `Play Corporate Connections and you'll see why real connection beats any meeting:\n${gameUrl}\n\n` +
+    `Let's actually hang. No agenda. No action items. Just us.`
+  );
+
+  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+}
+
 // ── Event listeners ───────────────────────────────────────────────────────────
 btnShuffle.addEventListener("click", shuffleTiles);
 btnDeselect.addEventListener("click", deselectAll);
@@ -294,6 +341,14 @@ btnSubmit.addEventListener("click", submitGuess);
 btnPrev.addEventListener("click", () => loadPuzzle(currentPuzzleIndex - 1));
 btnNext.addEventListener("click", () => loadPuzzle(currentPuzzleIndex + 1));
 document.getElementById("btn-copy").addEventListener("click", copyShare);
+document.getElementById("btn-show-invite").addEventListener("click", openInvite);
+document.getElementById("btn-invite-back").addEventListener("click", closeInvite);
+inviteFormEl.addEventListener("submit", sendInvite);
+
+// Close invite on Escape
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && inviteScreenEl.classList.contains("open")) closeInvite();
+});
 
 // ── Start ─────────────────────────────────────────────────────────────────────
 loadPuzzle(0);
