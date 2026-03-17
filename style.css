@@ -52,12 +52,12 @@ header p.subtitle {
 
 .puzzle-nav button {
   background: none;
-  border: 1px solid #ccc;
+  border: 1px solid #888;
   border-radius: 6px;
   padding: 4px 10px;
   cursor: pointer;
   font-size: 0.8rem;
-  color: #333;
+  color: #111;
   transition: background 0.15s;
 }
 
@@ -73,6 +73,8 @@ header p.subtitle {
 .game-container {
   width: 100%;
   max-width: 580px;
+  box-sizing: border-box;
+  padding: 0 4px;
 }
 
 .instruction {
