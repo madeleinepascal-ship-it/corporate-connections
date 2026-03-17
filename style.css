@@ -46,10 +46,8 @@ header p.subtitle {
 .puzzle-nav {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
   margin-bottom: 8px;
-  font-size: 0.85rem;
-  color: #666;
 }
 
 .puzzle-nav button {

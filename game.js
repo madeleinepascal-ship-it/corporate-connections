@@ -32,7 +32,6 @@ const btnDeselect    = document.getElementById("btn-deselect");
 const btnSubmit      = document.getElementById("btn-submit");
 const btnPrev        = document.getElementById("btn-prev");
 const btnNext        = document.getElementById("btn-next");
-const puzzleLabel    = document.getElementById("puzzle-label");
 const inviteScreenEl = document.getElementById("invite-screen");
 const inviteFormEl   = document.getElementById("invite-form");
 const midNudgeEl     = document.getElementById("mid-nudge");
@@ -292,8 +291,7 @@ function updateButtons() {
 
 // ── Puzzle navigation ─────────────────────────────────────────────────────────
 function updatePuzzleNav() {
-  puzzleLabel.textContent = `Puzzle ${currentPuzzleIndex + 1} of ${PUZZLES.length}`;
-  btnPrev.disabled = currentPuzzleIndex === 0;
+btnPrev.disabled = currentPuzzleIndex === 0;
   btnNext.disabled = currentPuzzleIndex === PUZZLES.length - 1;
 }
 
