@@ -157,7 +157,7 @@ const PUZZLES = [
       {
         category: "Words guaranteed to give everyone the ick",
         color: "purple",
-        words: ["VIRAL", "FRICTION-MAXXING", "BRAIN DUMP", "SOUP TO NUTS"],
+        words: ["VIRAL", "FRICTION-MAXXING", "BRAIN DUMP", "DEEP DIVE"],
       },
     ],
   },
@@ -176,14 +176,14 @@ const PUZZLES = [
         words: ["FRACTIONAL", "GROWTH", "CONTENT STRATEGY", "CADENCE"],
       },
       {
-        category: "You can talk tech bro, bro",
+        category: "Gross, but kindaaa makes you hungry",
         color: "blue",
-        words: ["EDGE-NATIVE", "AGI", "HARD TECH", "AUTONOMY"],
+        words: ["SLOP", "LOW-HANGING FRUIT", "A LOT ON MY PLATE", "SOUP TO NUTS"],
       },
       {
-        category: "Words guaranteed to give everyone the ick",
+        category: "You can talk tech bro, bro",
         color: "purple",
-        words: ["VIRAL", "FRICTION-MAXXING", "BRAIN DUMP", "SOUP TO NUTS"],
+        words: ["EDGE-NATIVE", "AGI", "HARD TECH", "AUTONOMY"],
       },
     ],
   },
