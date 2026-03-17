@@ -309,6 +309,80 @@ header p.subtitle {
   color: #fff !important;
 }
 
+/* ── Mid-game nudge ─────────────────────────────────────────────────────── */
+
+.mid-nudge {
+  display: none;
+  background: #1a1a1a;
+  color: #f5f0e8;
+  border-radius: 12px;
+  padding: 14px 40px 14px 16px;
+  margin-bottom: 12px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+.mid-nudge.visible {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.mid-nudge-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.mid-nudge-main {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #f5f0e8;
+  margin-bottom: 4px;
+}
+
+.mid-nudge-aside {
+  font-size: 0.78rem;
+  color: #b0a898;
+  line-height: 1.5;
+}
+
+.mid-nudge-aside .aside {
+  opacity: 0.8;
+}
+
+.mid-nudge-btn {
+  border-color: #f5f0e8;
+  color: #f5f0e8;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  padding: 8px 16px;
+  flex-shrink: 0;
+}
+
+.mid-nudge-btn:hover:not(:disabled) {
+  background: #f5f0e8;
+  color: #1a1a1a;
+}
+
+.mid-nudge-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.15s;
+  line-height: 1;
+}
+
+.mid-nudge-close:hover {
+  color: #f5f0e8;
+}
+
 /* ── Invite overlay ──────────────────────────────────────────────────────── */
 
 .invite-screen {

@@ -26,6 +26,16 @@
     <!-- Solved group banners appear here -->
     <div id="solved-groups" class="solved-groups"></div>
 
+    <!-- Mid-game nudge (shown after first group solved) -->
+    <div id="mid-nudge" class="mid-nudge" aria-hidden="true">
+      <div class="mid-nudge-text">
+        <p class="mid-nudge-main">You connected the jargon. Now connect with someone real instead!</p>
+        <p class="mid-nudge-aside">Send to a friend. <span class="aside">(Is that a tenuous connection? Who cares? It's in the spirit of getting people to take it offline — literally.)</span></p>
+      </div>
+      <button class="btn mid-nudge-btn" onclick="openInvite()">Send to a friend →</button>
+      <button class="mid-nudge-close" onclick="closeMidNudge()" aria-label="Dismiss">✕</button>
+    </div>
+
     <!-- Tile grid -->
     <div id="grid" class="grid"></div>
 

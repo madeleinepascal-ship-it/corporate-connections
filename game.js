@@ -35,6 +35,7 @@ const btnNext        = document.getElementById("btn-next");
 const puzzleLabel    = document.getElementById("puzzle-label");
 const inviteScreenEl = document.getElementById("invite-screen");
 const inviteFormEl   = document.getElementById("invite-form");
+const midNudgeEl     = document.getElementById("mid-nudge");
 
 // ── Puzzle loading ───────────────────────────────────────────────────────────
 function loadPuzzle(index) {
@@ -60,6 +61,8 @@ function loadPuzzle(index) {
   // Reset UI
   solvedEl.innerHTML = "";
   endScreenEl.classList.remove("visible");
+  midNudgeEl.classList.remove("visible");
+  midNudgeEl.setAttribute("aria-hidden", "true");
   renderDots();
   renderGrid();
   updateButtons();
@@ -148,7 +151,15 @@ function submitGuess() {
       }
     }, 50);
 
+    if (solvedColors.length === 1) {
+      setTimeout(() => {
+        midNudgeEl.classList.add("visible");
+        midNudgeEl.removeAttribute("aria-hidden");
+      }, 600);
+    }
+
     if (solvedColors.length === 4) {
+      midNudgeEl.classList.remove("visible");
       setTimeout(() => endGame(true), 800);
     }
   } else {
@@ -287,6 +298,12 @@ function updatePuzzleNav() {
   puzzleLabel.textContent = `Puzzle ${currentPuzzleIndex + 1} of ${PUZZLES.length}: ${PUZZLES[currentPuzzleIndex].title}`;
   btnPrev.disabled = currentPuzzleIndex === 0;
   btnNext.disabled = currentPuzzleIndex === PUZZLES.length - 1;
+}
+
+// ── Mid-game nudge ────────────────────────────────────────────────────────
+function closeMidNudge() {
+  midNudgeEl.classList.remove("visible");
+  midNudgeEl.setAttribute("aria-hidden", "true");
 }
 
 // ── Invite screen ─────────────────────────────────────────────────────────────
