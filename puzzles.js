@@ -36,7 +36,7 @@ const PUZZLES = [
       {
         category: "Let's push off the work to the next meeting",
         color: "yellow",
-        words: ["SYNCH", "CIRCLE BACK", "REGROUP", "TOUCH BASE"],
+        words: ["SYNC", "CIRCLE BACK", "REGROUP", "TOUCH BASE"],
       },
       {
         category: "Relentlessly pinging you 4ever",
@@ -51,7 +51,7 @@ const PUZZLES = [
       {
         category: "Let's turn this meeting into another meeting",
         color: "purple",
-        words: ["TAKEAWAYS", "ACTION ITEMS", "NEXT STEPS", "PARKING LOT"],
+        words: ["TAKEAWAYS", "ACTION ITEMS", "NEXT STEPS", "FOLLOW-UPS"],
       },
     ],
   },
