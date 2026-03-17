@@ -126,7 +126,7 @@ const PUZZLES = [
       {
         category: "Places you never want to be / things you never want to say",
         color: "blue",
-        words: ["ON THE SAME PAGE", "OUTSIDE THE BOX", "IN YOUR BACKPOCKET", "THE WEEDS"],
+        words: ["ON THE SAME PAGE", "OUTSIDE THE BOX", "IN YOUR BACKPOCKET", "IN THE WEEDS"],
       },
       {
         category: "Ways to sound extremely put together when you're falling apart",
