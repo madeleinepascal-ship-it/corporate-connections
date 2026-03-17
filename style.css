@@ -633,4 +633,29 @@ header p.subtitle {
     padding: 8px 14px;
     font-size: 0.8rem;
   }
+
+  .invite-screen {
+    padding: 16px;
+    align-items: flex-start;
+  }
+
+  .invite-inner {
+    gap: 24px;
+  }
+
+  .invite-body {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .invite-field input,
+  .invite-field textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .btn-send {
+    width: 100%;
+    text-align: center;
+  }
 }
