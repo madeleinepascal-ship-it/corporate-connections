@@ -292,7 +292,7 @@ function updateButtons() {
 
 // ── Puzzle navigation ─────────────────────────────────────────────────────────
 function updatePuzzleNav() {
-  puzzleLabel.textContent = `Puzzle ${currentPuzzleIndex + 1} of ${PUZZLES.length}: ${PUZZLES[currentPuzzleIndex].title}`;
+  puzzleLabel.textContent = `Puzzle ${currentPuzzleIndex + 1} of ${PUZZLES.length}`;
   btnPrev.disabled = currentPuzzleIndex === 0;
   btnNext.disabled = currentPuzzleIndex === PUZZLES.length - 1;
 }

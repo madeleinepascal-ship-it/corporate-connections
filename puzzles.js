@@ -7,7 +7,6 @@
 const PUZZLES = [
   {
     id: 1,
-    title: "AI Is Coming For Your Job",
     groups: [
       {
         category: "Things you better learn to understand, you silly human",
@@ -33,7 +32,6 @@ const PUZZLES = [
   },
   {
     id: 2,
-    title: "Let's Take This Offline",
     groups: [
       {
         category: "Let's push off the work to the next meeting",
@@ -59,7 +57,6 @@ const PUZZLES = [
   },
   {
     id: 3,
-    title: "Corporate Casualties",
     groups: [
       {
         category: "What happened to the project",
@@ -85,7 +82,6 @@ const PUZZLES = [
   },
   {
     id: 4,
-    title: "KPI Me Crazy",
     groups: [
       {
         category: "Things you and Garfield hate",
@@ -111,7 +107,6 @@ const PUZZLES = [
   },
   {
     id: 5,
-    title: "Move Fast & Break Nothing",
     groups: [
       {
         category: "Embarrassing ways to talk about ideas",
@@ -137,7 +132,6 @@ const PUZZLES = [
   },
   {
     id: 6,
-    title: "Chronically Online",
     groups: [
       {
         category: "Words you should never ever use in a deck (or ever)",
@@ -163,7 +157,6 @@ const PUZZLES = [
   },
   {
     id: 7,
-    title: "LinkedIn Is A Simulation",
     groups: [
       {
         category: "The best thing about the office",
@@ -189,7 +182,6 @@ const PUZZLES = [
   },
   {
     id: 8,
-    title: "Working For The Weekend",
     groups: [
       {
         category: "You are working the weekend, my friend",
