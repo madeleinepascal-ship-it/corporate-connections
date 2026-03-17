@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Connections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Corporate Connections</h1>
+    <p class="subtitle">Group four words that share something in common.<br>Warning: may cause flashbacks to your last all-hands.</p>
+  </header>
+
+  <div class="game-container">
+
+    <div class="puzzle-nav">
+      <button id="btn-prev">← Prev</button>
+      <span id="puzzle-label"></span>
+      <button id="btn-next">Next →</button>
+    </div>
+
+    <p class="instruction">Create four groups of four!</p>
+
+    <!-- Solved group banners appear here -->
+    <div id="solved-groups" class="solved-groups"></div>
+
+    <!-- Tile grid -->
+    <div id="grid" class="grid"></div>
+
+    <!-- Mistakes -->
+    <div class="mistakes-row">
+      <span>Mistakes remaining:</span>
+      <span id="dots"></span>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button class="btn" id="btn-shuffle">Shuffle</button>
+      <button class="btn" id="btn-deselect" disabled>Deselect All</button>
+      <button class="btn btn-primary" id="btn-submit" disabled>Submit</button>
+    </div>
+
+    <!-- End screen -->
+    <div id="end-screen" class="end-screen">
+      <h2 id="end-title"></h2>
+      <p id="end-message"></p>
+      <div class="share-result" id="share-result"></div>
+      <button class="btn btn-primary" id="btn-copy">Copy Result</button>
+    </div>
+
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="puzzles.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
