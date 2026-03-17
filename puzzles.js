@@ -161,7 +161,7 @@ const PUZZLES = [
       {
         category: "The best thing about the office",
         color: "yellow",
-        words: ["SNACKS", "JOKES", "ACTUAL HUMANS", "COMMISERATION"],
+        words: ["SNACKS", "JOKES", "ACTUAL HUMANS", "FRIENDS TO<br>COMPLAIN WITH"],
       },
       {
         category: "LLM's (LinkedIn's Loved Most)",
