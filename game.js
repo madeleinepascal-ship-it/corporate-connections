@@ -351,4 +351,4 @@ document.addEventListener("keydown", e => {
 });
 
 // ── Start ─────────────────────────────────────────────────────────────────────
-loadPuzzle(0);
+loadPuzzle(Math.floor(Math.random() * PUZZLES.length));
