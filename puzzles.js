@@ -137,6 +137,58 @@ const PUZZLES = [
   },
   {
     id: 6,
+    title: "Chronically Online",
+    groups: [
+      {
+        category: "Words you should never ever use in a deck (or ever)",
+        color: "yellow",
+        words: ["UNC", "IT'S GIVING", "SLAY", "CHOPPED"],
+      },
+      {
+        category: "Doomscroll at your own risk",
+        color: "green",
+        words: ["NEWS CYCLE", "LINKEDIN", "DOORDASH", "REELS"],
+      },
+      {
+        category: "The stuff dreams are made of",
+        color: "blue",
+        words: ["ENGAGEMENT", "METRICS", "VIEWS", "CLICKTHROUGHS"],
+      },
+      {
+        category: "Words guaranteed to give everyone the ick",
+        color: "purple",
+        words: ["VIRAL", "FRICTION-MAXXING", "BRAIN DUMP", "SOUP TO NUTS"],
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "LinkedIn Is A Simulation",
+    groups: [
+      {
+        category: "The best thing about the office",
+        color: "yellow",
+        words: ["SNACKS", "JOKES", "ACTUAL HUMANS", "COMMISERATION"],
+      },
+      {
+        category: "LLM's (LinkedIn's Loved Most)",
+        color: "green",
+        words: ["FRACTIONAL", "GROWTH", "CONTENT STRATEGY", "CADENCE"],
+      },
+      {
+        category: "You can talk tech bro, bro",
+        color: "blue",
+        words: ["EDGE-NATIVE", "AGI", "HARD TECH", "AUTONOMY"],
+      },
+      {
+        category: "Words guaranteed to give everyone the ick",
+        color: "purple",
+        words: ["VIRAL", "FRICTION-MAXXING", "BRAIN DUMP", "SOUP TO NUTS"],
+      },
+    ],
+  },
+  {
+    id: 8,
     title: "Working For The Weekend",
     groups: [
       {
