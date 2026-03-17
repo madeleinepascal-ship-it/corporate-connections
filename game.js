@@ -292,8 +292,10 @@ function updateButtons() {
 
 // ── Puzzle navigation ─────────────────────────────────────────────────────────
 function updatePuzzleNav() {
-btnPrev.disabled = currentPuzzleIndex === 0;
+  btnPrev.disabled = currentPuzzleIndex === 0;
   btnNext.disabled = currentPuzzleIndex === PUZZLES.length - 1;
+  btnPrev.textContent = `← Puzzle ${currentPuzzleIndex}`;
+  btnNext.textContent = `Puzzle ${currentPuzzleIndex + 2} →`;
 }
 
 // ── Mid-game nudge ────────────────────────────────────────────────────────
