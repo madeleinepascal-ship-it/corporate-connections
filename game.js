@@ -151,15 +151,7 @@ function submitGuess() {
       }
     }, 50);
 
-    if (solvedColors.length === 1) {
-      setTimeout(() => {
-        midNudgeEl.classList.add("visible");
-        midNudgeEl.removeAttribute("aria-hidden");
-      }, 600);
-    }
-
     if (solvedColors.length === 4) {
-      midNudgeEl.classList.remove("visible");
       setTimeout(() => endGame(true), 800);
     }
   } else {
@@ -225,6 +217,11 @@ function showToast(msg, className = "") {
 // ── End game ─────────────────────────────────────────────────────────────────
 function endGame(won) {
   gameOver = true;
+
+  if (won) {
+    midNudgeEl.classList.add("visible");
+    midNudgeEl.removeAttribute("aria-hidden");
+  }
 
   // Reveal any unsolved groups
   const puzzle = PUZZLES[currentPuzzleIndex];
