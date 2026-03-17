@@ -7,105 +7,157 @@
 const PUZZLES = [
   {
     id: 1,
-    title: "The Monday Morning Meeting",
+    title: "AI Is Coming For Your Job",
     groups: [
       {
-        category: "Move the ___",
+        category: "Things you better learn to understand, you silly human",
         color: "yellow",
-        words: ["NEEDLE", "DIAL", "GOALPOST", "BAR"],
+        words: ["AGENTIC", "PROMPT", "LLM", "GENERATIVE"],
       },
       {
-        category: "Types of corporate 'thinking'",
+        category: "Signs your think piece needs your own thinking",
         color: "green",
-        words: ["GRANULAR", "HOLISTIC", "LATERAL", "STRATEGIC"],
+        words: ["EM-DASH", "DELVE", "RULE OF THREE", "EMOJIS"],
       },
       {
-        category: "Words for 'meeting'",
+        category: "Beautiful poetry about your latest social media strategy",
         color: "blue",
-        words: ["SYNC", "HUDDLE", "STANDUP", "TOUCHPOINT"],
+        words: ["THINKPIECE", "SUBSTACK", "LINKEDIN POST", "DECKLET"],
       },
       {
-        category: "Euphemisms for 'fired'",
+        category: "Every brand value ever.",
         color: "purple",
-        words: ["RIGHTSIZED", "SUNSETTED", "TRANSITIONED", "RESTRUCTURED"],
+        words: ["HUMAN", "AUTHENTIC", "CREATIVE", "INNOVATIVE"],
       },
     ],
   },
   {
     id: 2,
-    title: "Offsite Agenda",
+    title: "Let's Take This Offline",
     groups: [
       {
-        category: "___ culture",
+        category: "Let's push off the work to the next meeting",
         color: "yellow",
-        words: ["HUSTLE", "STARTUP", "TOXIC", "GRIND"],
+        words: ["SYNCH", "CIRCLE BACK", "REGROUP", "TOUCH BASE"],
       },
       {
-        category: "You never have enough of this",
+        category: "Relentlessly pinging you 4ever",
         color: "green",
-        words: ["BANDWIDTH", "HEADSPACE", "RUNWAY", "CAPACITY"],
+        words: ["ZOOM", "MEET", "TEAMS", "SLACK"],
       },
       {
-        category: "___ mindset",
+        category: "Things the meeting could've been",
         color: "blue",
-        words: ["GROWTH", "AGILE", "FOUNDER", "ENTREPRENEURIAL"],
+        words: ["E-MAIL", "TEXT", "HALLWAY CHAT", "PHONE CALL"],
       },
       {
-        category: "What happened to the project",
-        color: "purple",
-        words: ["DEPRIORITIZED", "PARKED", "TABLED", "SHELVED"],
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Q4 All-Hands",
-    groups: [
-      {
-        category: "Ways to say 'talk later'",
-        color: "yellow",
-        words: ["PING", "SYNC", "CIRCLE BACK", "FOLLOW UP"],
-      },
-      {
-        category: "Things that are always 'aligned'",
-        color: "green",
-        words: ["STAKEHOLDERS", "INCENTIVES", "PRIORITIES", "VISION"],
-      },
-      {
-        category: "Jargon for 'we failed'",
-        color: "blue",
-        words: ["LEARNINGS", "PIVOTED", "ITERATED", "RECALIBRATED"],
-      },
-      {
-        category: "Low-value meeting outputs",
+        category: "Let's turn this meeting into another meeting",
         color: "purple",
         words: ["TAKEAWAYS", "ACTION ITEMS", "NEXT STEPS", "PARKING LOT"],
       },
     ],
   },
   {
-    id: 4,
-    title: "Synergy Summit",
+    id: 3,
+    title: "Corporate Casualties",
     groups: [
       {
-        category: "Things that are always 'robust'",
+        category: "What happened to the project",
         color: "yellow",
-        words: ["PIPELINE", "SOLUTION", "FRAMEWORK", "ECOSYSTEM"],
+        words: ["DEPRIORITIZED", "PARKED", "TABLED", "SHELVED"],
       },
       {
-        category: "Verbs that mean absolutely nothing",
+        category: "What happened to the jobs",
+        color: "green",
+        words: ["RESTRUCTURED", "DOWNSIZED", "SUNSETTED", "TRANSITIONED"],
+      },
+      {
+        category: "We never have enough of this",
+        color: "blue",
+        words: ["BANDWIDTH", "RUNWAY", "CAPACITY", "HEADSPACE"],
+      },
+      {
+        category: "We failed, ok? But let's make it sound cooler",
+        color: "purple",
+        words: ["LEARNINGS", "PIVOTED", "RECALIBRATED", "ITERATED"],
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "KPI Me Crazy",
+    groups: [
+      {
+        category: "Things you and Garfield hate",
+        color: "yellow",
+        words: ["MONDAYS", "WORK", "ANNOYING PEOPLE", "YOUR BOSS"],
+      },
+      {
+        category: "Things we desperately want at work",
+        color: "green",
+        words: ["ROI", "KPI", "LOL", "PTO"],
+      },
+      {
+        category: "Things we desperately need to move and raise",
+        color: "blue",
+        words: ["NEEDLE", "DIAL", "GOALPOST", "BAR"],
+      },
+      {
+        category: "All the things we must align, dear cogs!",
+        color: "purple",
+        words: ["STAKEHOLDERS", "VISION", "PRIORITIES", "INCENTIVES"],
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Move Fast & Break Nothing",
+    groups: [
+      {
+        category: "Embarrassing ways to talk about ideas",
+        color: "yellow",
+        words: ["SANDBOX", "JAM SESSION", "BRAINSTORM", "PLAY"],
+      },
+      {
+        category: "Words to use when you have no clue what you're talking about",
         color: "green",
         words: ["LEVERAGE", "SYNERGIZE", "IDEATE", "DEMOCRATIZE"],
       },
       {
-        category: "What the roadmap always has",
+        category: "Phrases that should never come out of your mouth",
         color: "blue",
-        words: ["MILESTONES", "DELIVERABLES", "DEPENDENCIES", "BLOCKERS"],
+        words: ["SAME PAGE", "OUTSIDE THE BOX", "YOUR BACKPOCKET", "LOW-HANGING"],
       },
       {
-        category: "Ways to say 'I have no idea'",
+        category: "Ways to sound extremely put together when you're falling apart",
         color: "purple",
-        words: ["LET ME LOOP IN", "GREAT QUESTION", "OFFLINE THAT", "TAKE IT ON NOTICE"],
+        words: ["RAMP UP", "DRILL DOWN", "UNPACK", "LEAN IN"],
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Working For The Weekend",
+    groups: [
+      {
+        category: "You are working the weekend, my friend",
+        color: "yellow",
+        words: ["HOT LIST", "DELIVERABLES", "CRUNCH TIME", "DEADLINE"],
+      },
+      {
+        category: "Things you pretend to understand about software development",
+        color: "green",
+        words: ["AGILE", "SCRUM", "SPRINT", "STANDUP"],
+      },
+      {
+        category: "Ways to passive-aggressively follow up",
+        color: "blue",
+        words: ["PING", "NUDGE", "BUMP", "LOOP IN"],
+      },
+      {
+        category: "Your LinkedIn bio, probably",
+        color: "purple",
+        words: ["VISIONARY", "DISRUPTOR", "THOUGHT LEADER", "CHANGE AGENT"],
       },
     ],
   },
