@@ -61,7 +61,7 @@ const PUZZLES = [
       {
         category: "What happened to the project",
         color: "yellow",
-        words: ["DEPRIORITIZED", "PARKED", "TABLED", "SHELVED"],
+        words: ["DE-<br>PRIORITIZED", "PARKED", "TABLED", "SHELVED"],
       },
       {
         category: "What happened to the jobs",
@@ -146,7 +146,7 @@ const PUZZLES = [
       {
         category: "The stuff dreams are made of",
         color: "blue",
-        words: ["ENGAGEMENT", "METRICS", "VIEWS", "CLICKTHROUGHS"],
+        words: ["ENGAGEMENT", "METRICS", "VIEWS", "CLICK-<br>THROUGHS"],
       },
       {
         category: "Words guaranteed to give everyone the ick",

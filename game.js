@@ -75,7 +75,7 @@ function renderGrid() {
   for (const tile of tiles) {
     const el = document.createElement("div");
     el.className = "tile";
-    el.textContent = tile.word;
+    el.innerHTML = tile.word;
     el.dataset.word = tile.word;
     el.addEventListener("click", () => toggleSelect(tile.word));
     gridEl.appendChild(el);
