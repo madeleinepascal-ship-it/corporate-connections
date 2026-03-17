@@ -294,6 +294,8 @@ function updateButtons() {
 function updatePuzzleNav() {
   btnPrev.disabled = currentPuzzleIndex === 0;
   btnNext.disabled = currentPuzzleIndex === PUZZLES.length - 1;
+  btnPrev.style.visibility = currentPuzzleIndex === 0 ? "hidden" : "visible";
+  btnNext.style.visibility = currentPuzzleIndex === PUZZLES.length - 1 ? "hidden" : "visible";
   btnPrev.textContent = `← Puzzle ${currentPuzzleIndex}`;
   btnNext.textContent = `Puzzle ${currentPuzzleIndex + 2} →`;
 }
