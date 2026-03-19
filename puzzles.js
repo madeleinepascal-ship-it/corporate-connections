@@ -91,7 +91,7 @@ const PUZZLES = [
       {
         category: "Things we desperately want at work",
         color: "green",
-        words: ["ROI", "KPI", "LOLS", "PTO"],
+        words: ["ROIS", "KPIS", "LOLS", "PTO"],
       },
       {
         category: "Things we desperately need to move and raise",
